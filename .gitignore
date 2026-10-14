@@ -1,0 +1,13 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Sesi login & artefak lokal (berisi cookie rahasia, jangan di-commit)
+.tiktok_bulk/
+session.json
+*.log
+
+# Media uji coba
+sample_videos/

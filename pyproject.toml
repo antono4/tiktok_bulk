@@ -1,0 +1,22 @@
+[project]
+name = "tiktok-bulk-upload"
+version = "0.1.0"
+description = "Upload video masal ke TikTok Studio (creator center) dengan Playwright"
+requires-python = ">=3.10"
+dependencies = ["playwright>=1.44"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+tiktok-bulk = "tiktok_bulk.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["tiktok_bulk*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
